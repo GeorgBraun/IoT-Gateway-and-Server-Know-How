@@ -5,13 +5,16 @@ A collection of know-how and URLs to get started with IoT Gateways and Servers.
 
 Note: Bluetooth Low Energy (BLE) was formerly known as Bluetooth Smart
 
-List of helpful URLs:
+**List of helpful URLs:**
 
 * Debian Wiki, BluetoothUser:<br>
   https://wiki.debian.org/BluetoothUser
   
 * ARch Linux Wiki, Bluetooth:<br> 
   https://wiki.archlinux.org/index.php/Bluetooth
+  
+* SuperUser: How many devices can be hooked up to one PC Bluetooth adapter at a time?<br>
+  https://superuser.com/a/935508
 
 * Raspberry Pi, Raspbian:
   * Bluetooth Commands:<br>
@@ -25,3 +28,11 @@ List of helpful URLs:
     
   * Raspberry Pi Geek (in German and with many adds): Bluetooth auf dem Raspberry Pi 3 einrichten <br>
     http://www.raspberry-pi-geek.de/Magazin/2016/04/Bluetooth-auf-dem-Raspberry-Pi-3-einrichten
+  
+  * Raspberry Pi Geek (in English): Setting up Bluetooth on the Raspberry Pi 3<br>
+    Includes nice background information<br>
+    http://www.raspberry-pi-geek.com/Archive/2016/18/Setting-up-Bluetooth-on-the-Raspberry-Pi-3
+    
+  * ThePiHut: Bluetooth - Installing and Using Bluetooth on the Raspberry Pi<br>
+    https://thepihut.com/blogs/raspberry-pi-tutorials/17841464-bluetooth-installing-and-using-bluetooth-on-the-raspberry-pi
+
