@@ -1,6 +1,34 @@
 # IoT-Gateway-and-Server-Know-How
 A collection of know-how and URLs to get started with IoT Gateways and Servers.
 
+## Node-RED
+
+### Node-RED in general
+
+### Node-Red in general
+
+* Node-RED home page on https://nodered.org/
+  * Getting Started on https://nodered.org/docs/getting-started/
+* "Random Nerd Tutorials" about various IoT topics on https://randomnerdtutorials.com
+  * "Getting Started with Node-RED on Raspberry Pi"
+    * https://randomnerdtutorials.com/getting-started-with-node-red-on-raspberry-pi/
+    * Basic infos about node-red
+    * Installation in Raspberry Pi (there might be other/simpler ways than shown here)
+    * Node-Red IDE Overview
+    * A very simple flow with "Inject" and "Debug"
+  * "Exporting and Backing Up your Node-RED Nodes"
+    * https://randomnerdtutorials.com/exporting-and-backing-up-your-node-red-nodes/
+    * simple and short ...
+
+### Node-RED-dashboard
+
+* "Random Nerd Tutorials", "Getting Started with Node-RED Dashboard"
+    * https://randomnerdtutorials.com/getting-started-with-node-red-dashboard/
+    * Installation
+    * UI Tabs and Groups
+    * Very simple UI with "Room and Garden", but no interaction or business logic
+
+ 
 ## Bluetooth und Bluetooth Low Energy (BLE) on embedded Linux devices
 
 Note: Bluetooth Low Energy (BLE) was formerly known as Bluetooth Smart
