@@ -3,8 +3,6 @@ A collection of know-how and URLs to get started with IoT Gateways and Servers.
 
 ## Node-RED
 
-### Node-RED in general
-
 ### Node-Red in general
 
 * Node-RED home page on https://nodered.org/
@@ -19,6 +17,10 @@ A collection of know-how and URLs to get started with IoT Gateways and Servers.
   * "Exporting and Backing Up your Node-RED Nodes"
     * https://randomnerdtutorials.com/exporting-and-backing-up-your-node-red-nodes/
     * simple and short ...
+* "Node RED Programming Guide" from Sense Tecnic Systems Inc
+  * Homepage on http://noderedguide.com/
+  * Eight Lectures about Node-Red
+  * Most lectures use "FRED", a cloud service for "Front end for Node-RED", which you may (or may not) use.
 
 ### Node-RED-dashboard
 
