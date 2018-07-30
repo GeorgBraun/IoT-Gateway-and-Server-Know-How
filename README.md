@@ -1,6 +1,10 @@
 # IoT-Gateway-and-Server-Know-How
 A collection of know-how and URLs to get started with IoT Gateways and Servers.
 
+## Raspberry Pi (RPi) and NodeJS
+
+* w3schools.com: "Node.js and Raspberry Pi" on https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp
+
 ## Node-RED
 
 ### Node-Red in general
