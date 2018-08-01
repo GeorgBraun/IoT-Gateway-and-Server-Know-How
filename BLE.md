@@ -2,14 +2,15 @@
 
 ## High-level introductions
 
-#### Kelvin Aviles: Bluetooth Low Energy App Development: An Intro
+#### 1. Kelvin Aviles: Bluetooth Low Energy App Development: An Intro
 
 * https://www.youtube.com/watch?v=Y2cEbZw_R6M
 * 4 minutes
 * Really short intro, basically just difference between Bluetooth and Bluetooth Low Energy and what beacons are used for
 
+&nbsp;
 
-#### Adafruit Industries, Collin's Lab - Bluetooth Low Energy
+#### 2. Adafruit Industries, Collin's Lab - Bluetooth Low Energy
 
 * https://www.youtube.com/watch?v=ItV08vGqACM
 * 5 minutes
@@ -23,7 +24,7 @@
 
 ## More technical details
 
-#### Kelvin Aviles: Bluetooth Low Energy App Development: The Basics
+#### 1. Kelvin Aviles: Bluetooth Low Energy App Development: The Basics
 * https://www.youtube.com/watch?v=MzM3-YWftxE
 * 6 minutes
 * Short and vary helpful!
@@ -43,9 +44,9 @@
      * List of Characteristics ist at https://www.bluetooth.com/specifications/gatt/characteristics
    * 128-bit wide: custom, user specific
 
-   
+&nbsp;
 
-#### Nordic Semiconductor: Intro to Bluetooth low energy and BLE development with Nordic Semiconductor
+#### 2. Nordic Semiconductor: Intro to Bluetooth low energy and BLE development with Nordic Semiconductor
 
 * https://www.youtube.com/watch?v=pLgnHuGI69s
 * 27 minutes
