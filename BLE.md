@@ -29,7 +29,7 @@
 #### 1. Kelvin Aviles: Bluetooth Low Energy App Development: The Basics
 * https://www.youtube.com/watch?v=MzM3-YWftxE
 * 6 minutes
-* Short and vary helpful!
+* Short and very helpful!
 
 **Contents:**
 1. Peripherals and Centrals
