@@ -1,6 +1,6 @@
 # BLE, Bluetooth Low Energy
 
-## High-level introductions
+## High-level Introductions
 
 #### 1. Kelvin Aviles: Bluetooth Low Energy App Development: An Intro
 
@@ -21,8 +21,10 @@
 2. Application examples with Adruino (no technical details)
 3. Beakon
 
+&nbsp;
 
-## More technical details
+
+## Technical Details
 
 #### 1. Kelvin Aviles: Bluetooth Low Energy App Development: The Basics
 * https://www.youtube.com/watch?v=MzM3-YWftxE
@@ -45,6 +47,7 @@
    * 128-bit wide: custom, user specific
 
 &nbsp;
+
 
 #### 2. Nordic Semiconductor: Intro to Bluetooth low energy and BLE development with Nordic Semiconductor
 
