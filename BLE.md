@@ -1,5 +1,27 @@
 # BLE, Bluetooth Low Energy
 
+**Table of Contents**
+
+- [High-level Introductions](#high-level-introductions)
+    - [1. Kelvin Aviles: Bluetooth Low Energy App Development: An Intro](#1-kelvin-aviles-bluetooth-low-energy-app-development-an-intro)
+    - [2. Adafruit Industries, Collin's Lab - Bluetooth Low Energy](#2-adafruit-industries-collin-s-lab-bluetooth-low-energy)
+- [Technical Details](#technical-details)
+    - [1. Kelvin Aviles: Bluetooth Low Energy App Development: The Basics](#1-kelvin-aviles-bluetooth-low-energy-app-development-the-basics)
+    - [2. Nordic Semiconductor: Intro to Bluetooth low energy and BLE development with Nordic Semiconductor](#2-nordic-semiconductor-intro-to-bluetooth-low-energy-and-ble-development-with-nordic-semiconductor)
+    - [3. Argenox Technologies: Introduction to Bluetooth Low Energy (BLE) v4.0](#3-argenox-technologies-introduction-to-bluetooth-low-energy-ble-v4-0)
+    - [4. Argenox Technologies: A BLE Advertising Primer](#4-argenox-technologies-a-ble-advertising-primer)
+    - [5. Wendy Warne: Bluetooth Low Energy - It starts with Advertising](#5-wendy-warne-bluetooth-low-energy-it-starts-with-advertising)
+- [Implementations](#implementations)
+  - [BLE Peripherals](#ble-peripherals)
+    - [BBC micro:bit](#bbc-micro-bit)
+    - [ESP32](#esp32)
+  - [BLE Centrals](#ble-centrals)
+
+<hr>
+
+&nbsp;
+
+
 ## High-level Introductions
 
 #### 1. Kelvin Aviles: Bluetooth Low Energy App Development: An Intro
@@ -71,3 +93,64 @@
    * The Central device is the client, receiving/consuming the data (e.g. cell phone)
 9. Basic information about the nRF52 chips from Nordic
 
+&nbsp;
+
+
+#### 3. Argenox Technologies: Introduction to Bluetooth Low Energy (BLE) v4.0
+
+* http://www.argenox.com/bluetooth-low-energy-ble-v4-0-development/library/introduction-to-bluetooth-low-energy-v4-0/
+* Short, high-level, nice
+
+&nbsp;
+
+
+#### 4. Argenox Technologies: A BLE Advertising Primer
+
+* http://www.argenox.com/bluetooth-low-energy-ble-v4-0-development/library/a-ble-advertising-primer/
+* In-depth, very helpful explanation about BLE Advertising protocol and data packets
+* Includes "A Quick Look into UUIDs" with the standard 12 byte wide UUID base `XXXXXXXX-0000-1000-8000-00805F9B34FB`.
+  * The leading 4 bytes are standardized by the bluetooth spec. If only 2 bytes are used, the remaining leading 2 bytes are 0.
+  * For example, the "Battery Service" is assigned to the 2 byte ID `0x180F` (see https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.service.battery_service.xml)<br>
+    The corresponding full blown 16 byte UUID is then `0000180f-0000-1000-8000-00805f9b34fb`
+  * This also means: self created UUIDs **must not** follow the `XXXXXXXX-0000-1000-8000-00805F9B34FB` pattern since this is reserved for standardized UUIDs.
+* Also includes "BLE Beacons and iBeacons"
+
+&nbsp;
+
+
+#### 5. Wendy Warne: Bluetooth Low Energy - It starts with Advertising
+
+* https://blog.bluetooth.com/bluetooth-low-energy-it-starts-with-advertising?_ga=2.16106166.140214492.1536600728-1140941370.1536600728
+* Short, technical introduction about advertising data packet
+
+&nbsp;
+
+
+## Implementations
+
+### BLE Peripherals
+
+#### BBC micro:bit
+
+The BBC micro:bit (https://microbit.org/ and https://en.wikipedia.org/wiki/Micro_Bit) is a single board embedded system including a micro controller (Nordic nRF51 comprising an ARM Cortex-M0), a 3-axis accelerometer, a 3-axis magnetometer, a micro-USB-connector and a Bluetooth low energy 4.1 stack.
+
+The BBC micro:bit can be programmed with many different programming languages using graphical programming as well as traditional text based IDEs.
+
+One possible way is the use the Arduino IDE for programming the BBC micro:bit.
+
+One excellent tutorial is provided by  Limor Fried (aka Lady Ada) from Adafruit Industries: "Micro:bit with Arduino" on https://learn.adafruit.com/use-micro-bit-with-arduino?view=all (or as PDF on https://cdn-learn.adafruit.com/downloads/pdf/use-micro-bit-with-arduino.pdf).
+
+After the tutorial, you are able to read one of the micro:bits sensors (e.g. the accelerometer), transmit the values to a paired cell phone via BLE and display it with the free app "Adafruit Bluefruit LE Connect".
+
+
+
+#### ESP32
+
+details to come ...
+
+&nbsp;
+
+
+### BLE Centrals
+
+details to come ...
