@@ -78,7 +78,7 @@
 * Similar to Kelvin Aviles' videos above, but slower and a bit more details
 
 **Contents:**
-1. Device roles: Broadcaster, Observer, Peripheral Central
+1. Device roles: Broadcaster, Observer, Peripheral, Central
 2. Advertising channels
 3. Identifying devices: MAC addresses
 4. Identifying applications (also known as "profiles"): Universal Unique Identifiers (UUIDs)
@@ -108,7 +108,7 @@
 
 * http://www.argenox.com/bluetooth-low-energy-ble-v4-0-development/library/a-ble-advertising-primer/
 * In-depth, very helpful explanation about BLE Advertising protocol and data packets
-* Includes "A Quick Look into UUIDs" with the standard 12 byte wide UUID base `XXXXXXXX-0000-1000-8000-00805F9B34FB`.
+* Includes "A Quick Look into UUIDs" with the standard 12 byte wide UUID base for 16 byte wide UUIDs `XXXXXXXX-0000-1000-8000-00805F9B34FB`.
   * The leading 4 bytes are standardized by the bluetooth spec. If only 2 bytes are used, the remaining leading 2 bytes are 0.
   * For example, the "Battery Service" is assigned to the 2 byte ID `0x180F` (see https://www.bluetooth.com/specifications/gatt/viewer?attributeXmlFile=org.bluetooth.service.battery_service.xml)<br>
     The corresponding full blown 16 byte UUID is then `0000180f-0000-1000-8000-00805f9b34fb`
@@ -132,13 +132,17 @@
 
 #### BBC micro:bit
 
-The BBC micro:bit (https://microbit.org/ and https://en.wikipedia.org/wiki/Micro_Bit) is a single board embedded system including a micro controller (Nordic nRF51 comprising an ARM Cortex-M0), a 3-axis accelerometer, a 3-axis magnetometer, a micro-USB-connector and a Bluetooth low energy 4.1 stack.
+The BBC micro:bit (https://en.wikipedia.org/wiki/Micro_Bit and https://microbit.org/) is a single board embedded system including 
+* a micro controller (Nordic nRF51 comprising an ARM Cortex-M0)
+* a 3-axis accelerometer
+* a 3-axis magnetometer
+* an LED matrix
+* a micro-USB-connector
+* a Bluetooth low energy 4.1 interface
 
-The BBC micro:bit can be programmed with many different programming languages using graphical programming as well as traditional text based IDEs.
+The BBC micro:bit can be programmed with many different programming languages using graphical programming as well as traditional text based IDEs, like the Arduino IDE.
 
-One possible way is the use the Arduino IDE for programming the BBC micro:bit.
-
-One excellent tutorial is provided by  Limor Fried (aka Lady Ada) from Adafruit Industries: "Micro:bit with Arduino" on https://learn.adafruit.com/use-micro-bit-with-arduino?view=all (or as PDF on https://cdn-learn.adafruit.com/downloads/pdf/use-micro-bit-with-arduino.pdf).
+One excellent tutorial is provided by  Limor Fried (aka _"Lady Ada"_) from Adafruit Industries: "Micro:bit with Arduino" on https://learn.adafruit.com/use-micro-bit-with-arduino?view=all (or as PDF on https://cdn-learn.adafruit.com/downloads/pdf/use-micro-bit-with-arduino.pdf).
 
 After the tutorial, you are able to read one of the micro:bits sensors (e.g. the accelerometer), transmit the values to a paired cell phone via BLE and display it with the free app "Adafruit Bluefruit LE Connect".
 
