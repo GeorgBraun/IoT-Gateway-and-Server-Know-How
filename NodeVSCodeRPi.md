@@ -1,4 +1,4 @@
-# Installing NodeJS and VSCode on RPi
+﻿# Installing NodeJS and VSCode on RPi
 
 This page describes how to install and use NodeJS and VSCode on RPi
 
@@ -20,6 +20,7 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - # get installer 
 sudo apt-get install -y nodejs # run the installer
 node --version # Test the NodeJS version, should result in 10.10.0 or higher
 npm --version  # Test NPM version, which comes with NodeJS, should be 5.6.0 or higher
+npm version    # Will provide a more extensive version list of various tools
 ```
 
 ### A longer description for RPi newbees
@@ -30,6 +31,8 @@ There is an excellent introduction (including a general RPi setup) and tutorial 
 
 
 ## VSCode on RPi
+
+### Installation
 
 Installation can be done as secribed on https://code.headmelted.com/
 
@@ -48,3 +51,34 @@ In case you need to start VSCode as root (e.g. for accessing BLE devices via nob
 mkdir /root/.vscode-oss # run this only once
 code-oss . --user-data-dir=/root/.vscode-oss # use this for every launch of vscode as root
 ```
+
+### Run VSCode remotely via SSH and X11-Forwarding
+
+1. Enable X11Forwarding on RPi:<br>
+   Make sure you have SSH access to your RPi (e.g. see above). Then, on the RPi, open the `sshd_config` via `sudo nano /etc/ssh/sshd_config` and make sure that you have line with `X11Forwarding yes`.
+1. Install xorg and some test apps:
+   ```bash
+   sudo apt-get install xorg
+   sudo apt-get install x11-apps
+   ```
+1. Install MobaXTerm on your Windows-PC:<br>
+   See https://mobaxterm.mobatek.net/
+1. Launch MobaXTerm and connect to your RPi via SSH. You should see:
+   ```text
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                        • MobaXterm 10.4 •                          │
+     │            (SSH client, X-server and networking tools)             │
+     │                                                                    │
+     │ ➤ SSH session to root@bananapim2zero.fritz.box                     │
+     │   • SSH compression : ✔                                            │
+     │   • SSH-browser     : ✔                                            │
+     │   • X11-forwarding  : ✔  (remote display is forwarded through SSH) │
+     │   • DISPLAY         : ✔  (automatically set on remote server)      │
+     │                                                                    │
+     │ ➤ For more info, ctrl+click on help or visit our website           │
+     └────────────────────────────────────────────────────────────────────┘
+   ```
+1. To test X11-Forwarding in the SSH-session, start `xeyes` or `xclock`. Their small windows should show up on your PC.
+1. Launch VSCode: In the SSH session, change into your working directory on your RPi and launch `code-oss .` <br>
+   The X11-Forwarding will display VSCode on your PC.
+
