@@ -54,8 +54,9 @@ code-oss . --user-data-dir=/root/.vscode-oss # use this for every launch of vsco
 
 ### Run VSCode remotely via SSH and X11-Forwarding
 
+1. Ensure SSH access to your RPi, e.g. as described on https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp
 1. Enable X11Forwarding on RPi:<br>
-   Make sure you have SSH access to your RPi (e.g. see above). Then, on the RPi, open the `sshd_config` via `sudo nano /etc/ssh/sshd_config` and make sure that you have line with `X11Forwarding yes`.
+   On the RPi, open the `sshd_config` via `sudo nano /etc/ssh/sshd_config` and make sure that you have a line with `X11Forwarding yes`.
 1. Install xorg and some test apps:
    ```bash
    sudo apt-get install xorg
