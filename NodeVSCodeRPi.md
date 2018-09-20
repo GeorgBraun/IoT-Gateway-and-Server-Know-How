@@ -23,7 +23,7 @@ npm --version  # Test NPM version, which comes with NodeJS, should be 5.6.0 or h
 npm version    # Will provide a more extensive version list of various tools
 ```
 
-### A longer description for RPi newbees
+### A longer description for RPi newbies
 
 There is an excellent introduction (including a general RPi setup) and tutorial on w3schools. Please browse to https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp and have fun.
 
