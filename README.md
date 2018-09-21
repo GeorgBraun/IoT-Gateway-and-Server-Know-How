@@ -1,5 +1,20 @@
-# IoT-Gateway-and-Server-Know-How
+﻿# IoT-Gateway-and-Server-Know-How
 A collection of know-how and URLs to get started with IoT Gateways and Servers.
+
+A short (4 minutes) and helpful video introduction "What is an IoT Gateway? (SAP EA Explorer - Short Video)" can be found at https://www.youtube.com/watch?v=6ObesqWDpEo
+
+**Contents of this page**
+
+<!-- TOC depthFrom:2 depthTo:3 -->
+
+- [Raspberry Pi (RPi) and NodeJS](#raspberry-pi-rpi-and-nodejs)
+- [Node-RED](#node-red)
+  - [Node-Red in general](#node-red-in-general)
+  - [Node-RED-dashboard](#node-red-dashboard)
+- [Things Gateway by Mozilla](#things-gateway-by-mozilla)
+- [Bluetooth und Bluetooth Low Energy (BLE) on embedded Linux devices](#bluetooth-und-bluetooth-low-energy-ble-on-embedded-linux-devices)
+
+<!-- /TOC -->
 
 ## Raspberry Pi (RPi) and NodeJS
 
@@ -34,7 +49,16 @@ A collection of know-how and URLs to get started with IoT Gateways and Servers.
     * UI Tabs and Groups
     * Very simple UI with "Room and Garden", but no interaction or business logic
 
- 
+
+## Things Gateway by Mozilla
+
+* Project Things: https://iot.mozilla.org/
+* Things Gateway: https://iot.mozilla.org/gateway/
+* Things Framework: https://iot.mozilla.org/things/
+* Ben Francis, 2018: How to build your own private smart home with a Raspberry Pi and Mozilla’s Things Gateway
+  * https://hacks.mozilla.org/2018/02/how-to-build-your-own-private-smart-home-with-a-raspberry-pi-and-mozillas-things-gateway/
+
+
 ## Bluetooth und Bluetooth Low Energy (BLE) on embedded Linux devices
 
 Note: Bluetooth Low Energy (BLE) was formerly known as Bluetooth Smart
