@@ -1,6 +1,6 @@
-# BLE, Bluetooth Low Energy
+﻿# BLE, Bluetooth Low Energy
 
-**Table of Contents**
+**Contents of this page**
 
 - [High-level Introductions](#high-level-introductions)
     - [1. Kelvin Aviles: Bluetooth Low Energy App Development: An Intro](#1-kelvin-aviles-bluetooth-low-energy-app-development-an-intro)
@@ -158,3 +158,18 @@ details to come ...
 ### BLE Centrals
 
 details to come ...
+
+Important hint:
+
+On Linux including Raspbian, you usually have to act as root (e.g. via `sudo`) to access Bluetooth and BLE devices. This can be avoided by adding Bluetooth permissions to the tools and server apps, that you want to use with Bluetooth. As described on https://github.com/mozilla-iot/gateway/blob/master/README.md#set-up-bluetooth-permissions and on https://github.com/noble/noble#running-without-rootsudo this can be done as follows:
+
+```bash
+# For NodeJS:
+sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
+
+# For Python 3:
+sudo setcap cap_net_raw+eip $(eval readlink -f `which python3`)
+```
+
+In case there is no `setcap` command on your system, you can install it by `sudo apt-get install libcap2-bin`.
+
