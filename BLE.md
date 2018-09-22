@@ -2,6 +2,8 @@
 
 **Contents of this page**
 
+<!-- TOC depthFrom:2 depthTo:4 -->
+
 - [High-level Introductions](#high-level-introductions)
     - [1. Kelvin Aviles: Bluetooth Low Energy App Development: An Intro](#1-kelvin-aviles-bluetooth-low-energy-app-development-an-intro)
     - [2. Adafruit Industries, Collin's Lab - Bluetooth Low Energy](#2-adafruit-industries-collins-lab---bluetooth-low-energy)
@@ -16,6 +18,9 @@
     - [BBC micro:bit](#bbc-microbit)
     - [ESP32](#esp32)
   - [BLE Centrals](#ble-centrals)
+    - [NodeJS and Noble](#nodejs-and-noble)
+
+<!-- /TOC -->
 
 <hr>
 
@@ -157,8 +162,6 @@ details to come ...
 
 ### BLE Centrals
 
-details to come ...
-
 Important hint:
 
 On Linux including Raspbian, you usually have to act as root (e.g. via `sudo`) to access Bluetooth and BLE devices. This can be avoided by adding Bluetooth permissions to the tools and server apps, that you want to use with Bluetooth. As described on https://github.com/mozilla-iot/gateway/blob/master/README.md#set-up-bluetooth-permissions and on https://github.com/noble/noble#running-without-rootsudo this can be done as follows:
@@ -173,3 +176,6 @@ sudo setcap cap_net_raw+eip $(eval readlink -f `which python3`)
 
 In case there is no `setcap` command on your system, you can install it by `sudo apt-get install libcap2-bin`.
 
+#### NodeJS and Noble
+
+To program a BLE central in NodeJS, use Noble from https://github.com/noble/noble. While the GitHub-Page provides an overview about scanning, connecting, ... you probably need a little tutorial. For example, you may take a look at Nic Raboy's tutorial "Use Node.js And A Raspberry Pi Zero W To Scan For BLE iBeacon Devices" from 2018 at https://www.youtube.com/watch?v=AFjYKEf7j2M. Hint: Instead of developing the initial project on your Mac or PC, you may just as well start directoly on the RPi. The newer models are fast enough for this.
