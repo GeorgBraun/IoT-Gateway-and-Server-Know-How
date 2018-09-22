@@ -99,7 +99,7 @@ Swagger is a specification and a framework to build and test RestAPIs. In 2016, 
 **Manuel Kiessling, 2017, The Node Beginner Blog: Node.js tutorial: Super-fast web applications with the WebSocket protocol**
 * https://www.nodebeginner.org/blog/post/nodejs-tutorial-how-to-work-with-websockets/
 * Nice explanation about the difference between HTTP Requests and WebSocket Connections
-* Bilds a nice litte example with a random stock price sent out by the server
+* Builds a nice litte example with a random stock price sent out by the server
 * The server is implemented with Express and Socket.IO, the client in the browser is built in a single html-file using Socket.IO and JQUERY.
 
 &nbsp;
