@@ -18,7 +18,10 @@ A short (4 minutes) and helpful video introduction "What is an IoT Gateway? (SAP
 
 ## Raspberry Pi (RPi) and NodeJS
 
-* w3schools.com: "Node.js and Raspberry Pi" on https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp
+If you are new to Raspberry Pi (RPi), take a look at the official Raspberry Pi documentation homepage: https://www.raspberrypi.org/documentation/.
+
+Another good source of introduction for "Node.js and Raspberry Pi" can be found on w3schools.com: https://www.w3schools.com/nodejs/nodejs_raspberrypi.asp
+
 
 ## Node-RED
 
