@@ -53,6 +53,11 @@ I you want to learn what HTTP, RestAPIs, Swagger and WebSockets are all about, y
 * https://www.youtube.com/watch?v=LooL6_chvN4
 * A 16 minute video
 
+**Zell Liew, Smashing Magazine, 2018: Understanding And Using REST APIs**
+* https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/
+* A written tutorial about RestAPI, HTTP request/response, JSON
+* Uses CURL and the GitHub RestAPI for examples
+
 &nbsp;
 
 
